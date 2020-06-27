@@ -1,7 +1,7 @@
 const inputCalc = document.querySelector('.account')
 const resulCalc = document.querySelector('.result')
 
-function input(i) {
+function addSymToEquation(i) {
     inputCalc.value = inputCalc.value + i
 }
 
