@@ -27,12 +27,12 @@
     <button onclick="addSymToEquation('4')" class="btn">4</button>
     <button onclick="addSymToEquation('5')" class="btn">5</button>
     <button onclick="addSymToEquation('6')" class="btn">6</button>
-    <button onclick="addSymToEquation('7')" class="btn">7</button>
+    <button onclick="addSymToEquation(this.innerText)" class="btn">7</button>
     <button onclick="addSymToEquation('8')" class="btn">8</button>
     <button onclick="addSymToEquation('9')" class="btn">9</button>
     <button onclick="addSymToEquation('%')" class="btn">%</button>
     <button onclick="reset()" class="btn">C</button>
-    <button onclick="input('CE')" class="btn">CE</button>
+    <button onclick="deleteLastSym()" class="btn">Удалить</button>
     <button onclick="addSymToEquation('.')" class="btn">.</button>
 </div>
 <script src="scripts/calculator.js"></script>
