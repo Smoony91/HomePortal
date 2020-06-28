@@ -22,10 +22,11 @@ function reset() {
 
 function deleteLastSym() {
 
-    inputCalc.value = inputCalc.value.slice(0,-1)
+    inputCalc.value = inputCalc.value.slice(0,-1) //убираем последне элемент строки
     // var str1 = 'Приближается утро.';
     // var str2 = str1.slice(4, -2);
     
     // console.log(str2); // ВЫВОД: лижается утр
     
 }
+
