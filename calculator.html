@@ -6,6 +6,7 @@
     <title>Калькулятор</title>
     <link rel="stylesheet" href="css/calculator.css">
     
+    
 </head>
 <body>
 
@@ -14,27 +15,28 @@
       <input type="text" placeholder="0.00" class="account">
       <input type="text" placeholder="0.00" class="result">
     </div>
-    <div class="main"></div>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">+</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">-</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">*</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">/</button>
-    <button onclick="result()" class="btn">=</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">0</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">1</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">2</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">3</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">4</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">5</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">6</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">7</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">8</button>
-    <button onclick="addSymToEquation(this.innerText)" class="btn">9</button>
-    <button onclick="reset()" class="btn">C</button>
-    <button onclick="deleteLastSym()" class="btn">Удалить</button>
-    <button onclick="addSymToEquation('.')" class="btn">.</button>
+    <div class="main">
+      <button onclick="reset()" class="btn-indigo">C</button>
+      <button onclick="deleteLastSym()" class="btn-del"><i class="fas fa-backspace"></i></button>
+      <button onclick="addSymToEquation('+')" class="btn-indigo"><i class="fas fa-plus"></i></button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">1</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">2</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">3</button>
+      <button onclick="addSymToEquation('-')" class="btn-indigo"><i class="fas fa-minus"></i></button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">4</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">5</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">6</button>
+      <button onclick="addSymToEquation('*')" class="btn-indigo"><i class="fas fa-times"></i></button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">7</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">8</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">9</button>
+      <button onclick="addSymToEquation('/')" class="btn-indigo"><i class="fas fa-divide"></i></button>
+      <button onclick="addSymToEquation('.')" class="btn-point">.</button>
+      <button onclick="addSymToEquation(this.innerText)" class="btn">0</button>    
+      <button onclick="result()" class="btn-result">=</button>
 </div>
 <script src="scripts/calculator.js"></script>
+<script src="https://kit.fontawesome.com/cf72eb509e.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

@@ -1,12 +1,6 @@
-{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     background-image: linear-gradient(-60deg, #ff9768 0%, #9156e1 100%);
-    font-family: 'Lato', sans-serif;
-
+    
 }
 
 .calculator {
@@ -23,17 +17,94 @@ body{
     padding-bottom: 25px;
     padding-right: 29px;
     padding-left: 29px;
-    background-color: #202020;
+    background-color: #220722;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     text-align: right;
 }
+
 .account {
+width: 100%;
+background: transparent;
+border: none;
+outline: none;
+color: #d98192;
+font-size: 18px;
+text-align: right;
+}
+.account::placeholder{
+    color: #d98192
+}
+
+.result {
     width: 100px;
-    background: transparent;
-    border: none; 
-    outline: none;
-    color: #d98192;
-    font-size: 18px;
+    margin-top: 18px;
     text-align: right;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: #fff;
+}
+.result::placeholder{
+    color: #fff;
+}
+
+.main {
+    width: 400px;
+    display: table;
+
+    }
+
+.btn {
+    width:  92px;
+    height: 92px;
+    padding: 39px;
+    font-size: 22px;
+    border-width: 1px;
+    border-color: #c0bcbc;
+    background-color: #d8d3d6;
+}
+.btn-del{
+    width:  184px;
+    height: 92px;
+    padding: 23px;
+    background-color: #9156e1;
+    font-size: 40px;
+    border-width: 1px;
+    border-color: #c0bcbc;
+    color: #fff;
+}
+
+.btn-result{
+    width:  184px;
+    height: 92px;
+    padding: 23px;
+    background-color: #c577a7;
+    font-size: 40px;
+    border-width: 1px;
+    border-color: #c0bcbc;
+    color: #fff;
+}
+.btn-indigo {
+    width:  92px;
+    height: 92px;
+    padding: 39px;
+    color: #fff;
+    font-size: 22px;
+    background-image: none;
+    background-color: #9156e1;
+    border-width: 1px;
+    border-color: #c0bcbc;
+}
+.btn-point {
+    width:  92px;
+    height: 92px;
+    padding: 23px;
+    color: #fff;
+    font-size: 40px;
+    background-image: none;
+    background-color: #9156e1;
+    border-width: 1px;
+    border-color: #c0bcbc; 
 }
