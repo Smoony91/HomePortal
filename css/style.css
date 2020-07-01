@@ -2,52 +2,10 @@ body {
 
   margin: 0px;
 }
-.globalmenu {
- margin: 0px;
- padding: 0px;
-}
-.globalmenu ul,
-.globalmenu ol{
-  list-style: none;
-}
-.globalmenu > ul{
-  display: flex;
-  justify-content: center;
-}
-.globalmenu > ul li a{
-  display: block;
-  background: #ececec;
-  padding: 15px 30px 15px 40px;
-  font-size: 14px;
-  color: #454547;
-  text-decoration: none;  
-  text-transform: uppercase;
-  }
-  .globalmenu > ul li {
-    position: relative;
-  }
-  .globalmenu >  ul li > a i.fas{
-    position: absolute;
-    top: 15px;
-    left: 12px;
-    font-size: 18px;
-   }
-
-   .globalmenu >  ul li > a i.fab{
-    position: absolute;
-    top: 15px;
-    left: 12px;
-    font-size: 18px;
-   }
-
-
-
-
-
 
 .button1 {
     font-weight: 700;
-    color: white;
+    color: rgb(78, 76, 76);
     text-decoration: none;
     padding: .8em 1em calc(.8em + 3px);
     border-radius: 3px;
