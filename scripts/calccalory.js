@@ -1,8 +1,8 @@
 
 
 function inputAllCalorys () {
-var num1 = document.getElementById('input100gram')
-    num1 = parseInt(num1)
+var num1 = document.getElementById('n1')
+    num1.value = parseInt()
 var num2 = document.querySelector('.inputAllcalory')
 var num3 = document.querySelector('.inputResoult')
 var num4 =  num1 / 100 * num2
