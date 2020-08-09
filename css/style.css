@@ -1,29 +1,85 @@
-body {
-
-  margin: 0px;
+*{
+	margin: 0;
+	padding: 0;
 }
 
-.button1 {
-    font-weight: 700;
-    color: rgb(78, 76, 76);
-    text-decoration: none;
-    padding: .8em 1em calc(.8em + 3px);
-    border-radius: 3px;
-    background: rgb(64,199,129);
-    box-shadow: 0 -3px rgb(53,167,110) inset;
-    transition: 0.2s;
-  } 
-  a.button1:hover { background: rgb(53, 167, 110); }
-  a.button1:active {
-    background: rgb(33,147,90);
-    box-shadow: 0 3px rgb(33,147,90) inset;
-  }
+body {
+	margin: 20px;
+	font: 13px/18px Arial;
+}
 
-.button2 {
-  font-weight: 500;
-  color: white;
-  background-color:#008CBA;
-  padding: 10px 24px;
-  border-radius: 5px;
-  width: 180px
+ul.menu {
+	background-color: #2b2b2b;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4f4f4f), to(#2b2b2b));
+    background-image: -webkit-linear-gradient(#4f4f4f, #2b2b2b);
+    background-image: -moz-linear-gradient(top, #4f4f4f, #2b2b2b);
+    background-image: -ms-linear-gradient(#4f4f4f, #2b2b2b);
+    background-image: -o-linear-gradient(#4f4f4f, #2b2b2b);
+    background-image: linear-gradient(#4f4f4f, #2b2b2b);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f4f4f', endColorstr='#2b2b2b', GradientType=0);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	width: 900px;
+    height: 36px;
+}
+
+ul.menu>li {
+	float: left;
+	list-style: none;
+	border-right: 1px solid #4f4f4f;
+	position: relative;
+}
+
+ul.menu>li>a {
+	color: white;
+	display: block;
+	padding: 8px 20px 10px;
+	text-decoration: none;
+	border-right: 1px solid #2b2b2b;
+}
+
+ul.menu>li>a:hover {
+	background-color: #2b2b2b;
+}
+
+ul.menu>li:first-child>a:hover {
+	border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+}
+
+ul.menu>li>ul {
+	display: none;
+}
+
+ul.menu>li:hover>ul {
+	display: block;
+	position: absolute;
+	top: 36px;
+	border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	background-color: #2b2b2b;
+	z-index: 1000;
+}
+
+ul.menu>li:hover>ul>li {
+	float: none;
+	width: 150px;
+	list-style: none;
+}
+
+ul.menu>li:hover>ul>li>a {
+	border-top: 1px solid #4f4f4f;
+	padding: 6px 20px 8px;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+ul.menu>li:hover>ul>li>a:hover {
+	background-color: transparent;
+	color: #c1deff;
 }
