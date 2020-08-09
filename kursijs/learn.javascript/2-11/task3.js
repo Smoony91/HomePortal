@@ -1,0 +1,1 @@
+let login = promt ("Кто там?")
