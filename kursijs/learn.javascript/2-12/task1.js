@@ -1,5 +1,4 @@
-let num;
-
+let num ;
 do {
-  num = prompt("Введите число, большее 100?", 0);
+    num = prompt ('Введите число большеe 100',0);
 } while (num <= 100 && num);
